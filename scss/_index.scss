@@ -1,0 +1,28 @@
+@import "_variables.scss";
+/* INICIO  */
+#inicio {
+  background-image: url("../img/segui82.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  & h1 {
+    font-size: 1.2rem;
+    padding: 3rem;
+    color: $barn-red;
+    display: flex;
+    justify-content: flex-start;
+    width: 86%;
+  }
+}
+.inicioFondo {
+  height: 100vh;
+  position: relative;
+}
+
