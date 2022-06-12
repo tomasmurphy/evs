@@ -1,8 +1,8 @@
 @import "_variables.scss";
 /* INICIO  */
 #inicio {
-  background-image: url("../img/segui82.jpg");
-  background-position: center;
+  background-image: url("../img/seguÍ_mirando-\(2160p\)\ \(1\).gif");
+  background-position: 58% 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -13,12 +13,12 @@
   flex-direction: column;
   flex-wrap: nowrap;
   & h1 {
-    font-size: 1.2rem;
-    padding: 3rem;
-    color: $barn-red;
+    font-size: .8rem;
+    margin-top: 3rem;
+    color: $camel;
     display: flex;
-    justify-content: flex-start;
-    width: 86%;
+    justify-content: center;
+    width: 100%;
   }
 }
 .inicioFondo {
