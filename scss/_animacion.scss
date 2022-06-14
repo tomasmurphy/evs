@@ -2,21 +2,25 @@
 figure {
   position: relative;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
-figure a {
-  color: $blanco;
-  text-align: start;
-  background: $azul;
+figure p {
+  display: flex;
+  color: $cosmic-latte;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: $bistre;
   transition: opacity 0.4s linear;
   cursor: pointer;
   position: absolute;
   top: 0;
-  right: 0.8rem;
   bottom: auto;
-  left: 0.8rem;
   opacity: 0;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
 }
-figure:hover a {
-  opacity: 0.75;
+figure:hover p {
+  opacity: .75;
 }
