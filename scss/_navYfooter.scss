@@ -2,6 +2,11 @@
 /* NAVEGACION */
 .navbar-expand-md .navbar-collapse {
   justify-content: flex-end;
+  .active{
+    background-color:  $barn-red;
+    opacity: .9;
+    border-radius: 2rem;
+  }
   
 }
 .cajaNav{
@@ -36,7 +41,7 @@
   }
 }
 .fondo{
-  background-color: $bistre;
+  background: linear-gradient(to right, rgb(7, 3, 0), rgba(43,33,24,1));
 }
 .navbar-nav {align-items: flex-end;
   
@@ -46,7 +51,6 @@
     font-variant: normal;
     font-weight: 400;
     line-height: 30px;
-    text-decoration: none;
     color: $cosmic-latte;
     text-shadow: 0px 1px $bistre;
     
@@ -78,13 +82,15 @@
     font-variant: normal;
     font-weight: 400;
     line-height: 30px;
-    text-decoration: none;
     color: $cosmic-latte;
     margin: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     &:hover {
       color: $cosmic-latte;
       opacity: .7;
     }
+    
     }
     @include desktop{
       a {
@@ -108,9 +114,10 @@ nav {
   font-variant: normal;
   font-weight: 400;
   line-height: 30px;
-  text-decoration: none;
+  text-decoration: unset;
   color: $cosmic-latte;
   margin-right: 2rem;
+  
   &:hover {
     color: $cosmic-latte;
     opacity: .7;

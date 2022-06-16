@@ -3,6 +3,8 @@ figure {
   position: relative;
   overflow: hidden;
   margin-bottom: 0;
+  height: 100%;
+  width: 100%;
 }
 figure p {
   display: flex;
@@ -10,17 +12,18 @@ figure p {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background: $bistre;
+  background: linear-gradient(to right, rgba(111,26,7,0), rgba(43,33,24,0));
   transition: opacity 0.4s linear;
   cursor: pointer;
   position: absolute;
   top: 0;
   bottom: auto;
-  opacity: 0;
   height: 100%;
   width: 100%;
   flex-direction: column;
+  opacity: 0;
 }
 figure:hover p {
-  opacity: .75;
+  background: linear-gradient(to right, rgba(111,26,7,.9), rgba(43,33,24,.8));
+  opacity: 1;
 }

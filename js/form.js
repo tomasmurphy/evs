@@ -48,8 +48,8 @@
 //   });
 // });
 
-if (!document.getElementById('navbarNavAltMarkup').classList.contains('.show')) {
-  $("navbarNavAltMarkup").addClass("fondo");
-}else{
-  $("navbarNavAltMarkup").removeClass("fondo");
-}
+// if (!document.getElementById('navbarNavAltMarkup').classList.contains('.show')) {
+//   $("navbarNavAltMarkup").addClass("fondo");
+// }else{
+//   $("navbarNavAltMarkup").removeClass("fondo");
+// }

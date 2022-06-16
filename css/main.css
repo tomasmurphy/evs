@@ -7819,6 +7819,10 @@ textarea.form-control-lg {
 /* NAVEGACION */
 .navbar-expand-md .navbar-collapse {
   justify-content: flex-end; }
+  .navbar-expand-md .navbar-collapse .active {
+    background-color: #6f1a07ff;
+    opacity: .9;
+    border-radius: 2rem; }
 
 .cajaNav {
   background: linear-gradient(to right, rgba(43, 33, 24, 0.8), rgba(43, 33, 24, 0));
@@ -7849,7 +7853,7 @@ textarea.form-control-lg {
         font-size: 1rem; } }
 
 .fondo {
-  background-color: #2b2118ff; }
+  background: linear-gradient(to right, #070300, #2b2118); }
 
 .navbar-nav {
   align-items: flex-end; }
@@ -7859,7 +7863,6 @@ textarea.form-control-lg {
   font-variant: normal;
   font-weight: 400;
   line-height: 30px;
-  text-decoration: none;
   color: #f7f3e3ff;
   text-shadow: 0px 1px #2b2118ff; }
 
@@ -7889,9 +7892,10 @@ textarea.form-control-lg {
     font-variant: normal;
     font-weight: 400;
     line-height: 30px;
-    text-decoration: none;
     color: #f7f3e3ff;
-    margin: 2rem; }
+    margin: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
     .navbar-collapse a:hover {
       color: #f7f3e3ff;
       opacity: .7; }
@@ -7915,7 +7919,7 @@ nav {
     font-variant: normal;
     font-weight: 400;
     line-height: 30px;
-    text-decoration: none;
+    text-decoration: unset;
     color: #f7f3e3ff;
     margin-right: 2rem; }
     nav a:hover {
@@ -8015,16 +8019,15 @@ footer {
 
 #filmDirector {
   height: 100%;
-  background-color: #2b2118ff;
+  background: linear-gradient(to right, #070300, #2b2118);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: nowrap; }
   #filmDirector .marMob {
-    margin-top: 3rem;
-    padding: 5%;
-    height: 100; }
+    height: 100%;
+    padding-top: 7vh; }
   #filmDirector h1, #filmDirector .h1 {
     font-size: .8rem;
     margin-top: 4.5rem;
@@ -8036,7 +8039,7 @@ footer {
     #filmDirector .marMob {
       border: 1px solid #2b2118ff;
       margin-top: 0;
-      padding: 0;
+      padding-top: 0;
       height: 93vh; }
     #filmDirector h1, #filmDirector .h1 {
       font-size: 1;
@@ -8055,10 +8058,102 @@ footer {
     font-size: .8rem;
     font-weight: bold; }
 
+/* CONTACT  */
+#contact {
+  background-image: url("../img/segui82.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #contact .flex {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    flex-direction: column;
+    align-content: flex-start; }
+  #contact .transparencia {
+    padding-top: 15vh;
+    width: 100%;
+    height: 100vh;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, rgba(43, 33, 24, 0.8), rgba(43, 33, 24, 0.6));
+    z-index: 8000; }
+    @media screen and (min-width: 768px) {
+      #contact .transparencia {
+        margin-top: 7vh;
+        height: 93vh;
+        background: linear-gradient(to right, rgba(43, 33, 24, 0.8), rgba(43, 33, 24, 0)); } }
+  #contact .formulario {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%; }
+  #contact ul {
+    padding-left: 12%; }
+    #contact ul li a {
+      padding-left: 0;
+      color: #f7f3e3ff;
+      justify-content: center;
+      align-items: center;
+      font-weight: 400;
+      font-size: .8rem;
+      text-decoration: none; }
+      #contact ul li a:hover {
+        opacity: .8; }
+  #contact input {
+    font-size: .8rem;
+    color: #2b2118ff;
+    font-weight: 500;
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 1rem;
+    outline: none;
+    background-color: #f7f3e3ff;
+    border: 0; }
+  #contact label {
+    font-size: 1rem;
+    color: #af9164ff;
+    padding-left: 4%; }
+  #contact textarea {
+    font-family: "Raleway";
+    font-size: .8rem;
+    color: #2b2118ff;
+    padding-left: 4%;
+    padding-top: 2%;
+    border-radius: .5rem;
+    outline: none;
+    background-color: #f7f3e3ff;
+    border: 0; }
+  #contact .boton {
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid #af9164ff;
+    opacity: 1;
+    background-color: #6f1a07ff;
+    color: #af9164ff;
+    transition: all 1s;
+    font-size: 1 rem;
+    border-radius: 2rem;
+    align-self: center;
+    padding: 0; }
+    #contact .boton:hover {
+      opacity: .7;
+      font-size: 1.2rem; }
+
+#other_projects {
+  height: 100vh;
+  background: linear-gradient(to right, #070300, #2b2118); }
+  #other_projects p {
+    padding-top: 5rem;
+    color: #f7f3e3ff; }
+
 figure {
   position: relative;
   overflow: hidden;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  height: 100%;
+  width: 100%; }
 
 figure p {
   display: flex;
@@ -8066,16 +8161,17 @@ figure p {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background: #2b2118ff;
+  background: linear-gradient(to right, rgba(111, 26, 7, 0), rgba(43, 33, 24, 0));
   transition: opacity 0.4s linear;
   cursor: pointer;
   position: absolute;
   top: 0;
   bottom: auto;
-  opacity: 0;
   height: 100%;
   width: 100%;
-  flex-direction: column; }
+  flex-direction: column;
+  opacity: 0; }
 
 figure:hover p {
-  opacity: .75; }
+  background: linear-gradient(to right, rgba(111, 26, 7, 0.9), rgba(43, 33, 24, 0.8));
+  opacity: 1; }

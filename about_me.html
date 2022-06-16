@@ -63,53 +63,57 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav sombra">
-            <a class="active" aria-current="page" href="./other_projects.html">OTHER PROJECTS</a>
-            <a class="" href="./about_me.html">ABOUT ME</a>
-            <a class="" href="./contact.html">CONTACT</a>
+            <a  href="./other_projects.html">OTHER PROJECTS</a>
+            <a class="active" aria-current="page" href="./about_me.html">ABOUT ME</a>
+            <a  href="./contact.html">CONTACT</a>
           </div>
         </div>
       </div>
     </nav>
     <!-- SECCION -->
     <!-- INICIO  -->
-    <section id="inicio" class="inicioFondo">
+    <section id="other_projects">
       <div class="d-none d-md-block cajaNav">
       </div>
+      <p><img src="./img/segui44.jpg" width="300" alt="">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia illo error eligendi impedit nisi! Magni reprehenderit adipisci provident, tenetur tempore saepe nam accusamus vel totam minus. Vitae ipsam veniam at?
+      Iam minus est aperiam vel eos dolorem aliquid in aut, quidem tempore error assumenda aliquam culpa. Officiis, placeat.</p>
     </section>
     <!-- SCRIPTS  -->
-    <script src="./js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/form.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script> 
-      $(window).scroll(function() {
-        if ($("#menu").offset().top >500) {
-          $("#menu").addClass("fondo");
-        }else{
-          $("#menu").removeClass("fondo");
-        }
-      });
-    </script>
-    <script>
-      $("#navbarNavAltMarkup").on("show.bs.collapse", function () {
-        $("#menu").addClass("fondo");
-        $("#1").addClass("desaparece");
-      });
-      $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
-        $("#menu").removeClass("fondo");
-        $("#1").removeClass("desaparece");
-      });
-    </script>
-    <script>
-      $('#seeMore').click(function() {
-      $("#seeMore2").removeClass("d-none");})
-    </script>
-  </body>
+<script src="./js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/form.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script>
+  $(window).scroll(function () {
+    if ($("#menu").offset().top > 500) {
+      $("#menu").addClass("fondo");
+    } else {
+      $("#menu").removeClass("fondo");
+    }
+  });
+</script>
+<script>
+  $("#navbarNavAltMarkup").on("show.bs.collapse", function () {
+    $("#menu").addClass("fondo");
+    $("#1").addClass("desaparece");
+  });
+  $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
+    $("#menu").removeClass("fondo");
+    $("#1").removeClass("desaparece");
+  });
+</script>
+<script>
+  $("#seeMore").click(function () {
+    $("#seeMore2").removeClass("d-none");
+  });
+</script>
+</body>
 </html>
