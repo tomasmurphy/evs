@@ -7972,7 +7972,7 @@ footer {
   background-image: url("../img/fondo.gif");
   background-position: 58% 0;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   opacity: 1;
   display: flex;
