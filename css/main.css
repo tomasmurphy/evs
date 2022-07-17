@@ -7821,16 +7821,18 @@ textarea.form-control-lg {
   justify-content: flex-end; }
   .navbar-expand-md .navbar-collapse .active {
     background-color: #6f1a07ff;
+    columns: #af9164ff;
     opacity: .9;
     border-radius: 2rem; }
 
-.cajaNav {
-  background: linear-gradient(to right, rgba(43, 33, 24, 0.8), rgba(43, 33, 24, 0));
-  height: 7vh;
-  width: 100vw;
-  position: fixed;
-  display: flex;
-  z-index: 15; }
+@media screen and (min-width: 768px) {
+  .cajaNav {
+    background: linear-gradient(to right, rgba(43, 33, 24, 0.8), rgba(43, 33, 24, 0));
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    z-index: 15; } }
 
 .bloqueLogo {
   display: flex;
@@ -7839,6 +7841,7 @@ textarea.form-control-lg {
   margin: auto;
   padding-left: 56px; }
   .bloqueLogo h1, .bloqueLogo .h1 {
+    margin-top: .5rem;
     font-size: .8rem;
     color: #af9164ff;
     align-items: center;
@@ -7855,7 +7858,7 @@ textarea.form-control-lg {
 .fondo {
   background: linear-gradient(to right, #070300, #2b2118); }
 
-.navbar-nav {
+.navbar-bar {
   align-items: flex-end; }
 
 .navbar-dark .navbar-brand {
@@ -7892,20 +7895,21 @@ textarea.form-control-lg {
     font-variant: normal;
     font-weight: 400;
     line-height: 30px;
-    color: #f7f3e3ff;
+    color: #af9164ff;
     margin: 2rem;
     padding-left: 1rem;
     padding-right: 1rem; }
     .navbar-collapse a:hover {
-      color: #f7f3e3ff;
+      color: #af9164ff;
       opacity: .7; }
   @media screen and (min-width: 768px) {
     .navbar-collapse a {
       font-size: .8rem;
       margin-right: 2rem;
-      margin-top: 0;
+      margin-top: .5rem;
       margin-bottom: 0;
-      margin-left: 0; } }
+      margin-left: 0;
+      color: #af9164ff; } }
 
 nav {
   opacity: 1;
@@ -7921,7 +7925,8 @@ nav {
     line-height: 30px;
     text-decoration: unset;
     color: #f7f3e3ff;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    margin-top: .5rem; }
     nav a:hover {
       color: #f7f3e3ff;
       opacity: .7; }
@@ -8019,15 +8024,7 @@ footer {
 
 #filmDirector {
   height: 100%;
-  background: linear-gradient(to right, #070300, #2b2118);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-  flex-wrap: nowrap; }
-  #filmDirector .marMob {
-    height: 100%;
-    padding-top: 7vh; }
+  background: linear-gradient(to right, #070300, #2b2118); }
   #filmDirector h1, #filmDirector .h1 {
     font-size: .8rem;
     margin-top: 4.5rem;
@@ -8037,18 +8034,29 @@ footer {
     width: 100%; }
   @media screen and (min-width: 768px) {
     #filmDirector .marMob {
-      border: 1px solid #2b2118ff;
-      margin-top: 0;
+      margin-top: 10vh;
       padding-top: 0;
-      height: 93vh; }
+      height: auto;
+      width: auto;
+      display: flex; }
     #filmDirector h1, #filmDirector .h1 {
       font-size: 1;
       justify-content: flex-start;
       padding-left: 15%;
       height: 5vh;
       align-items: flex-start; } }
-  #filmDirector .row {
-    justify-content: space-around; }
+  #filmDirector .carrusel {
+    margin-top: 87.34px;
+    height: calc(100vh - 87.34px);
+    display: flex; }
+    #filmDirector .carrusel p {
+      color: #f7f3e3ff;
+      font-weight: bold; }
+    #filmDirector .carrusel .btn {
+      background-color: #6f1a07ff;
+      color: #af9164ff;
+      font-size: .8rem;
+      font-weight: bold; }
   #filmDirector p {
     color: #f7f3e3ff;
     font-weight: bold; }
@@ -8062,13 +8070,13 @@ footer {
 #contact {
   background-image: url("../img/segui82.jpg");
   height: 100%;
-  background-attachment: fixed;
-  background-position: center;
+  background-attachment: scroll;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover; }
   #contact .flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100%;
     flex-direction: column;
     align-content: flex-start; }
@@ -8081,8 +8089,8 @@ footer {
     z-index: 8000; }
     @media screen and (min-width: 768px) {
       #contact .transparencia {
-        margin-top: 7vh;
-        height: 93vh;
+        margin-top: 10vh;
+        height: 90vh;
         background: linear-gradient(to right, rgba(43, 33, 24, 0.8), rgba(43, 33, 24, 0)); } }
   #contact .formulario {
     display: flex;
@@ -8097,7 +8105,8 @@ footer {
       align-items: center;
       font-weight: 400;
       font-size: .8rem;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-bottom: 1rem; }
       #contact ul li a:hover {
         opacity: .8; }
   #contact input {
@@ -8110,7 +8119,8 @@ footer {
     border-radius: 1rem;
     outline: none;
     background-color: #f7f3e3ff;
-    border: 0; }
+    border: 0;
+    margin-bottom: 1rem; }
   #contact label {
     font-size: 1rem;
     color: #af9164ff;
@@ -8141,12 +8151,55 @@ footer {
       opacity: .7;
       font-size: 1.2rem; }
 
-#other_projects {
+#about_me {
   height: 100vh;
-  background: linear-gradient(to right, #070300, #2b2118); }
-  #other_projects p {
-    padding-top: 5rem;
-    color: #f7f3e3ff; }
+  background: linear-gradient(to right, #070300, #2b2118);
+  align-items: center;
+  justify-content: center; }
+  @media screen and (min-width: 768px) {
+    #about_me {
+      height: 100vh; } }
+  #about_me p {
+    margin: 1rem;
+    color: #af9164ff; }
+  #about_me .contenedorAbout {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0; }
+  #about_me .cajaAbout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    align-content: center; }
+    @media screen and (min-width: 768px) {
+      #about_me .cajaAbout {
+        align-content: flex-start; } }
+  #about_me .transparencia {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 100%; }
+    @media screen and (min-width: 768px) {
+      #about_me .transparencia {
+        width: auto;
+        height: 42%;
+        background: #6f1a07ff;
+        border-radius: 2rem;
+        opacity: .9;
+        border: 1px solid #af9164ff; } }
+  #about_me .fondoImg {
+    background: #6f1a07ff;
+    opacity: .9;
+    box-shadow: 0px 0px 1px 1px #af9164ff; }
+    @media screen and (min-width: 768px) {
+      #about_me .fondoImg {
+        background: none;
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px #af9164ff; } }
 
 figure {
   position: relative;
