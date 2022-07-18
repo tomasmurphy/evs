@@ -7816,6 +7816,9 @@ textarea.form-control-lg {
   padding: 0;
   font-family: "Raleway"; }
 
+body {
+  background: linear-gradient(to right, #070300, #2b2118); }
+
 /* NAVEGACION */
 .navbar-expand-md .navbar-collapse {
   justify-content: flex-end; }
@@ -7823,7 +7826,8 @@ textarea.form-control-lg {
     background-color: #6f1a07ff;
     columns: #af9164ff;
     opacity: .9;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    width: auto; }
 
 @media screen and (min-width: 768px) {
   .cajaNav {
@@ -7895,12 +7899,13 @@ textarea.form-control-lg {
     font-variant: normal;
     font-weight: 400;
     line-height: 30px;
-    color: #af9164ff;
+    text-align: center;
+    color: #f7f3e3ff;
     margin: 2rem;
     padding-left: 1rem;
     padding-right: 1rem; }
     .navbar-collapse a:hover {
-      color: #af9164ff;
+      color: #f7f3e3ff;
       opacity: .7; }
   @media screen and (min-width: 768px) {
     .navbar-collapse a {
@@ -7909,7 +7914,7 @@ textarea.form-control-lg {
       margin-top: .5rem;
       margin-bottom: 0;
       margin-left: 0;
-      color: #af9164ff; } }
+      color: #f7f3e3ff; } }
 
 nav {
   opacity: 1;
@@ -7972,7 +7977,7 @@ footer {
   background-image: url("../img/fondo.gif");
   background-position: 58% 0;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   opacity: 1;
   display: flex;
@@ -8023,43 +8028,47 @@ footer {
   position: relative; }
 
 #filmDirector {
-  height: 100%;
+  margin-top: 7rem;
   background: linear-gradient(to right, #070300, #2b2118); }
-  #filmDirector h1, #filmDirector .h1 {
-    font-size: .8rem;
-    margin-top: 4.5rem;
-    color: #af9164ff;
-    display: flex;
-    justify-content: center;
-    width: 100%; }
   @media screen and (min-width: 768px) {
-    #filmDirector .marMob {
-      margin-top: 10vh;
-      padding-top: 0;
-      height: auto;
-      width: auto;
-      display: flex; }
-    #filmDirector h1, #filmDirector .h1 {
-      font-size: 1;
-      justify-content: flex-start;
-      padding-left: 15%;
-      height: 5vh;
-      align-items: flex-start; } }
-  #filmDirector .carrusel {
-    margin-top: 87.34px;
-    height: calc(100vh - 87.34px);
+    #filmDirector {
+      margin-top: 5rem; } }
+  #filmDirector .marMob {
+    height: auto;
+    width: auto;
     display: flex; }
-    #filmDirector .carrusel p {
-      color: #f7f3e3ff;
-      font-weight: bold; }
+  #filmDirector .centrar {
+    display: flex;
+    flex-direction: column-reverse; }
+    @media screen and (min-width: 768px) {
+      #filmDirector .centrar {
+        flex-direction: row; } }
+  #filmDirector h2, #filmDirector .h2 {
+    width: 80%;
+    border-bottom: 1px inset #af9164ff;
+    border-bottom-left-radius: 1rem;
+    color: #af9164ff;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem; }
+  #filmDirector p {
+    color: #f7f3e3ff;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem; }
+  #filmDirector a {
+    color: #f7f3e3ff;
+    text-decoration: none;
+    margin-bottom: 2rem; }
+  #filmDirector .carrusel {
+    margin-top: 8rem;
+    height: auto;
+    display: flex; }
     #filmDirector .carrusel .btn {
       background-color: #6f1a07ff;
       color: #af9164ff;
       font-size: .8rem;
       font-weight: bold; }
-  #filmDirector p {
-    color: #f7f3e3ff;
-    font-weight: bold; }
   #filmDirector .btn {
     background-color: #6f1a07ff;
     color: #af9164ff;
@@ -8068,7 +8077,7 @@ footer {
 
 /* CONTACT  */
 #contact {
-  background-image: url("../img/segui82.jpg");
+  background-image: url("../img/segui1.jpg");
   height: 100%;
   background-attachment: scroll;
   background-position: top;
@@ -8186,7 +8195,7 @@ footer {
     @media screen and (min-width: 768px) {
       #about_me .transparencia {
         width: auto;
-        height: 42%;
+        height: 224px;
         background: #6f1a07ff;
         border-radius: 2rem;
         opacity: .9;
@@ -8194,9 +8203,12 @@ footer {
   #about_me .fondoImg {
     background: #6f1a07ff;
     opacity: .9;
-    box-shadow: 0px 0px 1px 1px #af9164ff; }
+    box-shadow: 0px 0px 1px 1px #af9164ff;
+    border-start-end-radius: 2rem;
+    border-bottom-right-radius: 2rem; }
     @media screen and (min-width: 768px) {
       #about_me .fondoImg {
+        margin: 0;
         background: none;
         opacity: 1;
         box-shadow: 0px 0px 0px 0px #af9164ff; } }

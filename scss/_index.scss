@@ -65,50 +65,61 @@
 }
 // FILM DIRECTOR 
 #filmDirector{
-  height: 100%;
+  margin-top: 7rem;
   background: linear-gradient(to right, rgb(7, 3, 0), rgba(43,33,24,1));
-  h1 {
-    font-size: .8rem;
-    margin-top: 4.5rem;
-    color: $camel;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
   @include desktop{
+    margin-top: 5rem;
+  }
     .marMob{
-      margin-top: 10vh;
-      padding-top: 0;
       height: auto;
       width: auto;
       display: flex;
+    
     }
-    h1{
-      font-size: 1;
-      justify-content: flex-start;
-      padding-left: 15%;
-      height: 5vh;
-      align-items: flex-start;
+    .centrar{
+      display: flex;
+    flex-direction: column-reverse;
+    @include desktop {
+      flex-direction: row; 
     }
+    
   }
-  .carrusel{
-    margin-top: 87.34px;
-    height: calc(100vh - 87.34px);
-    display: flex;
-    p{
-      color: $cosmic-latte;
-      font-weight: bold;
+  h2{
+    width: 80%;
+    border-bottom: 1px inset $camel;
+    border-bottom-left-radius: 1rem;
+    color: $camel;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+      }
+  p{
+  color: $cosmic-latte;
+  
+   margin-bottom: 2rem;
+   margin-right: 1rem;
+  margin-left: 1rem;
+  }
+  a{
+    color: $cosmic-latte;
+    text-decoration: none;
+     
+     margin-bottom: 2rem;
+     
+    
     }
+  .carrusel{
+    margin-top: 8rem;
+    height: auto;
+    display: flex;
+    
+   
     .btn{
       background-color: $barn-red;
       color: $camel;
       font-size: .8rem;
       font-weight: bold;
     }
-  }
-  p{
-    color: $cosmic-latte;
-    font-weight: bold;
   }
   .btn{
     background-color: $barn-red;
@@ -120,7 +131,7 @@
 }
 /* CONTACT  */
 #contact {
-  background-image: url("../img/segui82.jpg");
+  background-image: url("../img/segui1.jpg");
   height: 100%;
   background-attachment: scroll;
   background-position: top;
@@ -258,7 +269,7 @@
     @include desktop {
       & {
     width: auto;
-    height: 42%;
+    height: 224px;
     background: $barn-red;
     border-radius: 2rem;
     opacity: .9;
@@ -270,7 +281,10 @@
     background: $barn-red;
     opacity: .9;
     box-shadow: 0px 0px 1px 1px $camel;
+    border-start-end-radius: 2rem;
+    border-bottom-right-radius: 2rem;
     @include desktop{
+      margin: 0;
       background: none;
       opacity: 1;
       box-shadow: 0px 0px 0px 0px $camel;

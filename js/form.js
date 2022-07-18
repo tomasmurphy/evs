@@ -53,3 +53,6 @@
 // }else{
 //   $("navbarNavAltMarkup").removeClass("fondo");
 // }
+
+let element = document.getElementById('parrafo');
+console.log(element.clientHeight)
