@@ -12,7 +12,7 @@
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: nowrap;
-  .flecha{
+  .flecha {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -22,21 +22,21 @@
     font-size: 2rem;
     color: $cosmic-latte;
   }
-  i{
-    opacity: .5;
-    &:hover{
-      opacity: .8;
+  i {
+    opacity: 0.5;
+    &:hover {
+      opacity: 0.8;
     }
   }
   & h1 {
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-top: 4rem;
     color: $camel;
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  @include desktop{
+  @include desktop {
     a {
       font-size: 1.2rem;
       font-style: normal;
@@ -46,10 +46,10 @@
       color: $cosmic-latte;
       &:hover {
         color: $cosmic-latte;
-        opacity: .7;
+        opacity: 0.7;
       }
-      }
-    h1{
+    }
+    h1 {
       font-size: 1;
       justify-content: flex-start;
       padding-left: 15%;
@@ -57,34 +57,24 @@
       align-items: flex-start;
     }
   }
-  
 }
 .inicioFondo {
   height: 100vh;
   position: relative;
 }
-// FILM DIRECTOR 
-#filmDirector{
+// KEEP ON LOOKING
+#keep_on_looking {
   margin-top: 7rem;
-  background: linear-gradient(to right, rgb(7, 3, 0), rgba(43,33,24,1));
-  @include desktop{
+  background: linear-gradient(to right, rgb(7, 3, 0), rgba(43, 33, 24, 1));
+  @include desktop {
     margin-top: 5rem;
   }
-    .marMob{
-      height: auto;
-      width: auto;
-      display: flex;
-    
-    }
-    .centrar{
-      display: flex;
-    flex-direction: column-reverse;
-    @include desktop {
-      flex-direction: row; 
-    }
-    
+  .marMob {
+    height: auto;
+    width: auto;
+    display: flex;
   }
-  h2{
+  h2 {
     width: 80%;
     border-bottom: 1px inset $camel;
     border-bottom-left-radius: 1rem;
@@ -92,42 +82,127 @@
     padding-top: 1rem;
     margin-bottom: 2rem;
     margin-left: 1rem;
-      }
-  p{
-  color: $cosmic-latte;
-  
-   margin-bottom: 2rem;
-   margin-right: 1rem;
-  margin-left: 1rem;
   }
-  a{
+  p {
+    color: $cosmic-latte;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  a {
     color: $cosmic-latte;
     text-decoration: none;
-     
-     margin-bottom: 2rem;
-     
-    
-    }
-  .carrusel{
+    margin-bottom: 2rem;
+  }
+  iframe{
+
+    width: 640px;
+    height: 300px;
+    max-height: 100%;
+    max-width: 100%;
+    @include desktop{
+      height: 360px;
+    } 
+  }
+}
+@include mobile {
+  .wow{
+      animation-name: none !important;
+      visibility: visible !important;
+  }
+}
+#projects {
+  margin-top: 9rem;
+  background: linear-gradient(to right, rgb(7, 3, 0), rgba(43, 33, 24, 1));
+  @include desktop {
+    height: 88vh;
+    margin-top: 12vh;
+  }
+  .marMob {
+    height: auto;
+    width: auto;
+    display: flex;
+  }
+  .centrarImg{
+    justify-content: center;
+    display: flex;
+
+  }
+  .bloqueImg {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    height: 100%;
+    width: auto;
+    max-width: 432px;
+    padding: 1em;
+  }
+  .bloqueImg p {
+    margin: 0;
+    display: flex;
+    color: $cosmic-latte;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(111,26,7,0), rgba(43,33,24,0));
+    transition: opacity 0.4s linear;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    left: 1em;
+    bottom: 1em;
+    height: calc(100%-1em);
+    width: auto;
+    max-width: 432px;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .bloqueImg:hover p {
+    background: linear-gradient(to right, rgba(111,26,7,.9), rgba(43,33,24,.8));
+    opacity: 1;
+  }
+  
+  h2 {
+    width: 80%;
+    border-bottom: 1px inset $camel;
+    border-bottom-left-radius: 1rem;
+    color: $camel;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+  p {
+    color: $cosmic-latte;
+
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  a {
+    color: $cosmic-latte;
+    text-decoration: none;
+
+    margin-bottom: 2rem;
+  }
+  .carrusel {
     margin-top: 8rem;
     height: auto;
     display: flex;
-    
-   
-    .btn{
+
+    .btn {
       background-color: $barn-red;
       color: $camel;
-      font-size: .8rem;
+      font-size: 0.8rem;
       font-weight: bold;
     }
   }
-  .btn{
+  .btn {
     background-color: $barn-red;
     color: $camel;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: bold;
   }
-  
 }
 /* CONTACT  */
 #contact {
@@ -137,7 +212,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  .flex{
+  .flex {
     display: flex;
     justify-content: space-evenly;
     height: 100%;
@@ -149,41 +224,49 @@
     width: 100%;
     height: 100vh;
     font-size: 1.2rem;
-    background: linear-gradient(to right, rgba(43,33,24,.8),rgba(43,33,24,.6));
+    background: linear-gradient(
+      to right,
+      rgba(43, 33, 24, 0.8),
+      rgba(43, 33, 24, 0.6)
+    );
     z-index: 8000;
     @include desktop {
       & {
         margin-top: 10vh;
         height: 90vh;
-        background: linear-gradient(to right, rgba(43,33,24,.8),rgba(43,33,24,0));
-    
+        background: linear-gradient(
+          to right,
+          rgba(43, 33, 24, 0.8),
+          rgba(43, 33, 24, 0)
+        );
       }
     }
   }
   & .formulario {
     display: flex;
     flex-direction: column;
-    padding-left: 10%;}
-  ul{
-  padding-left: 12% ;
-  li {
-    & a {
-      padding-left: 0;
-      color: $cosmic-latte;
-      justify-content: center;
-      align-items: center;
-      font-weight: 400;
-      font-size: .8rem;
-      text-decoration: none;
-      margin-bottom: 1rem;
-      &:hover {
-        opacity: .8;
-      }
-    }  
+    padding-left: 10%;
   }
-}
+  ul {
+    padding-left: 12%;
+    li {
+      & a {
+        padding-left: 0;
+        color: $cosmic-latte;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 0.8rem;
+        text-decoration: none;
+        margin-bottom: 1rem;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
   & input {
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: $bistre;
     font-weight: 500;
     padding-left: 4%;
@@ -202,11 +285,11 @@
   }
   & textarea {
     font-family: "Raleway";
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: $bistre;
     padding-left: 4%;
     padding-top: 2%;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     outline: none;
     background-color: $cosmic-latte;
     border: 0;
@@ -224,32 +307,32 @@
     align-self: center;
     padding: 0;
     &:hover {
-      opacity: .7;
+      opacity: 0.7;
       font-size: 1.2rem;
     }
   }
 }
-// ABOUT ME 
-#about_me{
+// ABOUT ME
+#about_me {
   height: 100vh;
-  background: linear-gradient(to right, rgb(7, 3, 0), rgba(43,33,24,1));
+  background: linear-gradient(to right, rgb(7, 3, 0), rgba(43, 33, 24, 1));
   align-items: center;
   justify-content: center;
-  @include desktop{
+  @include desktop {
     height: 100vh;
   }
- p{
-  margin: 1rem;
+  p {
+    margin: 1rem;
     color: $camel;
   }
-  .contenedorAbout{
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-bottom: 0;
-   }
-  .cajaAbout{
+  .contenedorAbout {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0;
+  }
+  .cajaAbout {
     width: 100%;
     height: 100%;
     display: flex;
@@ -257,7 +340,7 @@
     justify-content: flex-end;
     margin-bottom: 0;
     align-content: center;
-    @include desktop{
+    @include desktop {
       align-content: flex-start;
     }
   }
@@ -268,27 +351,26 @@
     height: 100%;
     @include desktop {
       & {
-    width: auto;
-    height: 224px;
-    background: $barn-red;
-    border-radius: 2rem;
-    opacity: .9;
-    border: 1px solid $camel;
+        width: auto;
+        height: 224px;
+        background: $barn-red;
+        border-radius: 2rem;
+        opacity: 0.9;
+        border: 1px solid $camel;
       }
     }
   }
-  .fondoImg{
+  .fondoImg {
     background: $barn-red;
-    opacity: .9;
+    opacity: 0.9;
     box-shadow: 0px 0px 1px 1px $camel;
     border-start-end-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    @include desktop{
+    @include desktop {
       margin: 0;
       background: none;
       opacity: 1;
       box-shadow: 0px 0px 0px 0px $camel;
-        
     }
   }
 }

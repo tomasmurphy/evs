@@ -7995,11 +7995,11 @@ footer {
     font-size: 2rem;
     color: #f7f3e3ff; }
   #inicio i {
-    opacity: .5; }
+    opacity: 0.5; }
     #inicio i:hover {
-      opacity: .8; }
+      opacity: 0.8; }
   #inicio h1, #inicio .h1 {
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-top: 4rem;
     color: #af9164ff;
     display: flex;
@@ -8015,7 +8015,7 @@ footer {
       color: #f7f3e3ff; }
       #inicio a:hover {
         color: #f7f3e3ff;
-        opacity: .7; }
+        opacity: 0.7; }
     #inicio h1, #inicio .h1 {
       font-size: 1;
       justify-content: flex-start;
@@ -8027,23 +8027,17 @@ footer {
   height: 100vh;
   position: relative; }
 
-#filmDirector {
+#keep_on_looking {
   margin-top: 7rem;
   background: linear-gradient(to right, #070300, #2b2118); }
   @media screen and (min-width: 768px) {
-    #filmDirector {
+    #keep_on_looking {
       margin-top: 5rem; } }
-  #filmDirector .marMob {
+  #keep_on_looking .marMob {
     height: auto;
     width: auto;
     display: flex; }
-  #filmDirector .centrar {
-    display: flex;
-    flex-direction: column-reverse; }
-    @media screen and (min-width: 768px) {
-      #filmDirector .centrar {
-        flex-direction: row; } }
-  #filmDirector h2, #filmDirector .h2 {
+  #keep_on_looking h2, #keep_on_looking .h2 {
     width: 80%;
     border-bottom: 1px inset #af9164ff;
     border-bottom-left-radius: 1rem;
@@ -8051,28 +8045,104 @@ footer {
     padding-top: 1rem;
     margin-bottom: 2rem;
     margin-left: 1rem; }
-  #filmDirector p {
+  #keep_on_looking p {
     color: #f7f3e3ff;
     margin-bottom: 2rem;
     margin-right: 1rem;
     margin-left: 1rem; }
-  #filmDirector a {
+  #keep_on_looking a {
     color: #f7f3e3ff;
     text-decoration: none;
     margin-bottom: 2rem; }
-  #filmDirector .carrusel {
+  #keep_on_looking iframe {
+    width: 640px;
+    height: 300px;
+    max-height: 100%;
+    max-width: 100%; }
+    @media screen and (min-width: 768px) {
+      #keep_on_looking iframe {
+        height: 360px; } }
+
+@media screen and (max-width: 767.9px) {
+  .wow {
+    animation-name: none !important;
+    visibility: visible !important; } }
+
+#projects {
+  margin-top: 9rem;
+  background: linear-gradient(to right, #070300, #2b2118); }
+  @media screen and (min-width: 768px) {
+    #projects {
+      height: 88vh;
+      margin-top: 12vh; } }
+  #projects .marMob {
+    height: auto;
+    width: auto;
+    display: flex; }
+  #projects .centrarImg {
+    justify-content: center;
+    display: flex; }
+  #projects .bloqueImg {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    height: 100%;
+    width: auto;
+    max-width: 432px;
+    padding: 1em; }
+  #projects .bloqueImg p {
+    margin: 0;
+    display: flex;
+    color: #f7f3e3ff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(111, 26, 7, 0), rgba(43, 33, 24, 0));
+    transition: opacity 0.4s linear;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    left: 1em;
+    bottom: 1em;
+    height: calc(100%-1em);
+    width: auto;
+    max-width: 432px;
+    flex-direction: column;
+    opacity: 0; }
+  #projects .bloqueImg:hover p {
+    background: linear-gradient(to right, rgba(111, 26, 7, 0.9), rgba(43, 33, 24, 0.8));
+    opacity: 1; }
+  #projects h2, #projects .h2 {
+    width: 80%;
+    border-bottom: 1px inset #af9164ff;
+    border-bottom-left-radius: 1rem;
+    color: #af9164ff;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem; }
+  #projects p {
+    color: #f7f3e3ff;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem; }
+  #projects a {
+    color: #f7f3e3ff;
+    text-decoration: none;
+    margin-bottom: 2rem; }
+  #projects .carrusel {
     margin-top: 8rem;
     height: auto;
     display: flex; }
-    #filmDirector .carrusel .btn {
+    #projects .carrusel .btn {
       background-color: #6f1a07ff;
       color: #af9164ff;
-      font-size: .8rem;
+      font-size: 0.8rem;
       font-weight: bold; }
-  #filmDirector .btn {
+  #projects .btn {
     background-color: #6f1a07ff;
     color: #af9164ff;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: bold; }
 
 /* CONTACT  */
@@ -8113,13 +8183,13 @@ footer {
       justify-content: center;
       align-items: center;
       font-weight: 400;
-      font-size: .8rem;
+      font-size: 0.8rem;
       text-decoration: none;
       margin-bottom: 1rem; }
       #contact ul li a:hover {
-        opacity: .8; }
+        opacity: 0.8; }
   #contact input {
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: #2b2118ff;
     font-weight: 500;
     padding-left: 4%;
@@ -8136,11 +8206,11 @@ footer {
     padding-left: 4%; }
   #contact textarea {
     font-family: "Raleway";
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: #2b2118ff;
     padding-left: 4%;
     padding-top: 2%;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     outline: none;
     background-color: #f7f3e3ff;
     border: 0; }
@@ -8157,7 +8227,7 @@ footer {
     align-self: center;
     padding: 0; }
     #contact .boton:hover {
-      opacity: .7;
+      opacity: 0.7;
       font-size: 1.2rem; }
 
 #about_me {
@@ -8198,11 +8268,11 @@ footer {
         height: 224px;
         background: #6f1a07ff;
         border-radius: 2rem;
-        opacity: .9;
+        opacity: 0.9;
         border: 1px solid #af9164ff; } }
   #about_me .fondoImg {
     background: #6f1a07ff;
-    opacity: .9;
+    opacity: 0.9;
     box-shadow: 0px 0px 1px 1px #af9164ff;
     border-start-end-radius: 2rem;
     border-bottom-right-radius: 2rem; }
