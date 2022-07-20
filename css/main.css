@@ -8063,7 +8063,7 @@ footer {
     margin-bottom: 2rem; }
   #keep_on_looking iframe {
     aspect-ratio: 1.8;
-    width: 660px;
+    width: 100%;
     max-width: 100%; }
 
 @media screen and (max-width: 767.9px) {
