@@ -7,3 +7,14 @@
 body{
   background: linear-gradient(to right, rgb(7, 3, 0), rgba(43,33,24,1));
 }
+
+@media screen and (max-width: 800px) {
+  .wow {
+    visibility: visible !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+   }
+}

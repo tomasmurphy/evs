@@ -65,7 +65,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+        <i class="bi bi-film"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav sombra">
@@ -86,21 +86,11 @@
       new WOW().init();
     </script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/form.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(window).scroll(function () {
-        if ($("#menu").offset().top > 500) {
-          $("#menu").addClass("fondo");
-        } else {
-          $("#menu").removeClass("fondo");
-        }
-      });
-    </script>
     <script>
       $("#navbarNavAltMarkup").on("show.bs.collapse", function () {
         $("#menu").addClass("fondo");
@@ -109,11 +99,6 @@
       $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
         $("#menu").removeClass("fondo");
         $("#1").removeClass("desaparece");
-      });
-    </script>
-    <script>
-      $("#seeMore").click(function () {
-        $("#seeMore2").removeClass("d-none");
       });
     </script>
   </body>

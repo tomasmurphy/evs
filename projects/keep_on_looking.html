@@ -30,7 +30,7 @@
     <!-- NAV  -->
     <nav
       id="menu"
-      class="fixed-top fondo cajaNav navbar-dark navbar navbar-expand-md"
+      class="fixed-top fondo navbar-dark navbar navbar-expand-md"
     >
       <div class="burgerTop fondo container-fluid mt-3 mt-md-0">
         <div class="bloqueLogo" id="1">
@@ -86,7 +86,7 @@
           <div class="mb-3 text-center col-12">
             <p>
               <span class="oscuro">Keep on looking (2022)</span>
-              <br />shortfilm. <br />9 min
+              <br />shortfilm <br />9 min
             </p>
             <p>
               Five women with different lives but crossed by the same reality,
@@ -95,7 +95,8 @@
             <hr />
             <p>
               Written and directed <i>by Emanuel Vazquez Santana.</i> <br />
-              Art direction <i>by Fernanda Bango.</i><br />
+              Cinematography <i>by Juan Beccaglia.</i> <br /> 
+              Art direction <i>by Fernanda Bango and Natalia Corbalán.</i><br />
               Color grading <i>by Alejandra Lescano.</i><br />
               Produced <i>by Chicago (co-produced Shootag).</i>
             </p>
@@ -159,7 +160,7 @@
         <div class="row marMob">
           <img
             src="../img/posterFinal.jpg"
-            class="col-md-6 col-12 img-fluid mb-3"
+            class="col-lg-4 col-md-6 col-12 img-fluid mb-3"
             alt=""
           />
         </div>
@@ -171,7 +172,6 @@
       new WOW().init();
     </script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/form.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -185,11 +185,6 @@
       $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
         $("#menu").removeClass("fondo");
         $("#1").removeClass("desaparece");
-      });
-    </script>
-    <script>
-      $("#seeMore").click(function () {
-        $("#seeMore2").removeClass("d-none");
       });
     </script>
   </body>

@@ -38,7 +38,7 @@
   </head>
   <body class="grid">
     <!-- NAV  -->
-    <nav id="menu" class="fixed-top cajaNav navbar-dark navbar navbar-expand-md">
+    <nav id="menu" class="fixed-top navbar-dark navbar navbar-expand-md">
       <div class="burgerTop container-fluid mt-3 mt-md-0">
         <div class="bloqueLogo" id="1">
           <a class="sombra navbar-brand mx-auto" href="./index.html"
@@ -82,7 +82,7 @@
         <div class="transparencia">
           <div class="row col-12 col-md-5 flex">
             <div class="col-12">
-              <form action="./php/enviar.php" method="POST" id="form">
+              <form id="form">
                 <div class="formulario">
                   <label for="name">Name</label>
                   <input type="text" nombre="name" id="name" class="" />
@@ -90,15 +90,13 @@
                   <input type="email" name="email" id="email" class="" />
                   <label for="message">Message</label>
                   <textarea name="message" rows="5" id="message"></textarea>
-                  <input
-                    class="boton mt-3"
-                    type="submit"
-                    value="send"
-                    class=""
-                  />
+                  
                 </div>
               </form>
             </div>
+            <button
+                    class=" col-12 boton"
+                    id="btnEnviar">Send</button>
             <div class="col-12">
               <ul>
                 <li>
@@ -141,21 +139,14 @@
   new WOW().init();
 </script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/sweetalert2.all.min.js"></script>
+<script src="./js/email.min.js"></script>    
 <script src="./js/form.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   crossorigin="anonymous"
 ></script>
-<script>
-  $(window).scroll(function () {
-    if ($("#menu").offset().top > 500) {
-      $("#menu").addClass("fondo");
-    } else {
-      $("#menu").removeClass("fondo");
-    }
-  });
-</script>
 <script>
   $("#navbarNavAltMarkup").on("show.bs.collapse", function () {
     $("#menu").addClass("fondo");
@@ -164,11 +155,6 @@
   $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
     $("#menu").removeClass("fondo");
     $("#1").removeClass("desaparece");
-  });
-</script>
-<script>
-  $("#seeMore").click(function () {
-    $("#seeMore2").removeClass("d-none");
   });
 </script>
 </body>

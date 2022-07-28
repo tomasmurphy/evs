@@ -7819,6 +7819,15 @@ textarea.form-control-lg {
 body {
   background: linear-gradient(to right, #070300, #2b2118); }
 
+@media screen and (max-width: 800px) {
+  .wow {
+    visibility: visible !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important; } }
+
 /* NAVEGACION */
 .navbar-expand-md .navbar-collapse {
   justify-content: flex-end; }
@@ -7831,12 +7840,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .cajaNav {
-    background: linear-gradient(to right, rgba(43, 33, 24, 0.8), rgba(43, 33, 24, 0));
-    height: 10vh;
-    width: 100vw;
+    background: linear-gradient(rgba(43, 33, 24, 0.6), rgba(43, 33, 24, 0));
+    height: 100%;
+    width: 100%;
     position: fixed;
     display: flex;
-    z-index: 15; } }
+    z-index: 15;
+    align-items: flex-start; } }
 
 .bloqueLogo {
   display: flex;
@@ -7943,6 +7953,12 @@ nav {
   justify-content: space-between;
   padding: 0; }
 
+i {
+  color: #b3b6b7ff; }
+
+button {
+  margin-top: 0.8125rem; }
+
 /* FOOTER  */
 footer {
   width: 100%;
@@ -7985,15 +8001,6 @@ footer {
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: nowrap; }
-  #inicio .flecha {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 98vh;
-    width: 100%;
-    padding-bottom: 3rem;
-    font-size: 2rem;
-    color: #f7f3e3ff; }
   #inicio i {
     opacity: 0.5; }
     #inicio i:hover {
@@ -8054,7 +8061,7 @@ footer {
     opacity: .8;
     font-size: .8rem; }
   #keep_on_looking .oscuro {
-    font-weight: 500; }
+    font-weight: bold; }
   #keep_on_looking hr {
     color: #af9164ff; }
   #keep_on_looking a {
@@ -8066,18 +8073,16 @@ footer {
     width: 100%;
     max-width: 100%; }
 
-@media screen and (max-width: 767.9px) {
-  .wow {
-    animation-name: none !important;
-    visibility: visible !important; } }
-
 #projects {
   margin-top: 9rem;
-  background: linear-gradient(to right, #070300, #2b2118); }
+  background: linear-gradient(to right, #070300, #2b2118);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   @media screen and (min-width: 768px) {
     #projects {
-      height: 88vh;
-      margin-top: 12vh; } }
+      height: 100vh;
+      margin: 0; } }
   #projects .marMob {
     height: auto;
     width: auto;
@@ -8085,6 +8090,9 @@ footer {
   #projects .centrarImg {
     justify-content: center;
     display: flex; }
+  #projects h2, #projects .h2 {
+    color: #f7f3e3ff;
+    font-size: 1rem; }
   #projects .bloqueImg {
     position: relative;
     overflow: hidden;
@@ -8107,7 +8115,7 @@ footer {
     top: 1em;
     right: 1em;
     left: 1em;
-    bottom: 1em;
+    bottom: 5.8em;
     height: calc(100%-1em);
     width: auto;
     max-width: 432px;
@@ -8142,12 +8150,12 @@ footer {
   background-size: cover; }
   #contact .flex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
     flex-direction: column;
     align-content: flex-start; }
   #contact .transparencia {
-    padding-top: 15vh;
+    padding-top: 10vh;
     width: 100%;
     height: 100vh;
     font-size: 1.2rem;
@@ -8155,15 +8163,16 @@ footer {
     z-index: 8000; }
     @media screen and (min-width: 768px) {
       #contact .transparencia {
-        margin-top: 10vh;
-        height: 90vh;
+        height: 100vh;
         background: linear-gradient(to right, rgba(43, 33, 24, 0.8), rgba(43, 33, 24, 0)); } }
   #contact .formulario {
     display: flex;
     flex-direction: column;
-    padding-left: 10%; }
+    margin: 2rem; }
   #contact ul {
-    padding-left: 12%; }
+    padding-left: 12%;
+    margin-top: 4rem;
+    list-style: none; }
     #contact ul li a {
       padding-left: 0;
       color: #f7f3e3ff;
@@ -8202,6 +8211,7 @@ footer {
     background-color: #f7f3e3ff;
     border: 0; }
   #contact .boton {
+    margin: 1rem;
     width: 10rem;
     height: 2rem;
     border: 1px solid #af9164ff;
@@ -8209,34 +8219,44 @@ footer {
     background-color: #6f1a07ff;
     color: #af9164ff;
     transition: all 1s;
-    font-size: 1 rem;
     border-radius: 2rem;
     align-self: center;
-    padding: 0; }
+    padding: 0;
+    font-size: .8rem; }
     #contact .boton:hover {
       opacity: 0.7;
-      font-size: 1.2rem; }
+      font-size: 1rem; }
 
 #about_me {
   margin-top: 9rem;
-  background: linear-gradient(to right, #070300, #2b2118); }
+  background: linear-gradient(to right, #070300, #2b2118);
+  display: flex;
+  align-items: center; }
   @media screen and (min-width: 768px) {
     #about_me {
-      margin-top: 9rem; } }
+      height: 100vh;
+      margin: 0; } }
   #about_me .marMob {
     height: auto;
     width: auto;
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media screen and (min-width: 768px) {
+      #about_me .marMob {
+        margin-left: 20%;
+        margin-right: 20%; } }
+  #about_me hr {
+    color: #af9164ff; }
   #about_me h2, #about_me .h2 {
-    width: 80%;
-    border-bottom: 1px inset #af9164ff;
-    border-bottom-left-radius: 1rem;
     color: #af9164ff;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
     margin-left: 1rem; }
+    @media screen and (min-width: 768px) {
+      #about_me h2, #about_me .h2 {
+        font-size: 1rem; } }
   #about_me p {
     color: #f7f3e3ff;
     margin-bottom: 1rem;

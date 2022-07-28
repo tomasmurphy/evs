@@ -12,16 +12,7 @@
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: nowrap;
-  .flecha {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 98vh;
-    width: 100%;
-    padding-bottom: 3rem;
-    font-size: 2rem;
-    color: $cosmic-latte;
-  }
+  
   i {
     opacity: 0.5;
     &:hover {
@@ -62,6 +53,7 @@
   height: 100vh;
   position: relative;
 }
+
 // KEEP ON LOOKING
 #keep_on_looking {
   margin-top: 7rem;
@@ -93,7 +85,7 @@
     font-size: .8rem;
   }
   .oscuro{
-    font-weight: 500;
+    font-weight: bold;
   }
   hr{
     color: $camel;
@@ -109,18 +101,15 @@
     max-width: 100%;
   }
 }
-@include mobile {
-  .wow{
-      animation-name: none !important;
-      visibility: visible !important;
-  }
-}
 #projects {
   margin-top: 9rem;
   background: linear-gradient(to right, rgb(7, 3, 0), rgba(43, 33, 24, 1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @include desktop {
-    height: 88vh;
-    margin-top: 12vh;
+    height: 100vh;
+    margin: 0;
   }
   .marMob {
     height: auto;
@@ -130,7 +119,11 @@
   .centrarImg{
     justify-content: center;
     display: flex;
-
+    // flex-direction: column;
+  }
+  h2{
+    color: $cosmic-latte;
+    font-size: 1rem;
   }
   .bloqueImg {
     position: relative;
@@ -155,7 +148,7 @@
     top: 1em;
     right: 1em;
     left: 1em;
-    bottom: 1em;
+    bottom: 5.8em;
     height: calc(100%-1em);
     width: auto;
     max-width: 432px;
@@ -195,13 +188,13 @@
   background-size: cover;
   .flex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
     flex-direction: column;
     align-content: flex-start;
   }
   & .transparencia {
-    padding-top: 15vh;
+    padding-top: 10vh;
     width: 100%;
     height: 100vh;
     font-size: 1.2rem;
@@ -213,8 +206,8 @@
     z-index: 8000;
     @include desktop {
       & {
-        margin-top: 10vh;
-        height: 90vh;
+      
+        height: 100vh;
         background: linear-gradient(
           to right,
           rgba(43, 33, 24, 0.8),
@@ -226,10 +219,12 @@
   & .formulario {
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
+    margin: 2rem;
   }
   ul {
     padding-left: 12%;
+    margin-top: 4rem;
+    list-style: none;
     li {
       & a {
         padding-left: 0;
@@ -240,6 +235,7 @@
         font-size: 0.8rem;
         text-decoration: none;
         margin-bottom: 1rem;
+        
         &:hover {
           opacity: 0.8;
         }
@@ -275,7 +271,9 @@
     background-color: $cosmic-latte;
     border: 0;
   }
+  
   & .boton {
+    margin: 1rem;
     width: 10rem;
     height: 2rem;
     border: 1px solid $camel;
@@ -283,13 +281,13 @@
     background-color: $barn-red;
     color: $camel;
     transition: all 1s;
-    font-size: 1 rem;
     border-radius: 2rem;
     align-self: center;
     padding: 0;
+    font-size: .8rem;
     &:hover {
       opacity: 0.7;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 }
@@ -297,8 +295,11 @@
 #about_me {
   margin-top: 9rem;
   background: linear-gradient(to right, rgb(7, 3, 0), rgba(43, 33, 24, 1));
+  display: flex;
+  align-items: center;
   @include desktop {
-    margin-top: 9rem;
+    height: 100vh;
+    margin: 0;
   }
   .marMob {
     height: auto;
@@ -307,18 +308,23 @@
     align-items: center;
     justify-content: center;
     @include desktop{
-      // justify-content: flex-start;
+      margin-left: 20%;
+      margin-right: 20%;
       
     }
   }
-  h2 {
-    width: 80%;
-    border-bottom: 1px inset $camel;
-    border-bottom-left-radius: 1rem;
+  hr{
     color: $camel;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
+  }
+  h2 {
+    color: $camel;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
     margin-left: 1rem;
+    @include desktop{
+      font-size: 1rem;
+    }
   }
   p {
     color: $cosmic-latte;
@@ -334,64 +340,3 @@
   }
   
 }
-// #about_me {
-//   height: 100vh;
-//   background: linear-gradient(to right, rgb(7, 3, 0), rgba(43, 33, 24, 1));
-//   align-items: center;
-//   justify-content: center;
-//   @include desktop {
-//     height: 100vh;
-//   }
-//   p {
-//     margin: 1rem;
-//     color: $camel;
-//   }
-//   .contenedorAbout {
-//     height: 100%;
-//     align-items: center;
-//     justify-content: center;
-//     display: flex;
-//     margin-bottom: 0;
-//   }
-//   .cajaAbout {
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     align-items: flex-start;
-//     justify-content: flex-end;
-//     margin-bottom: 0;
-//     align-content: center;
-//     @include desktop {
-//       align-content: flex-start;
-//     }
-//   }
-//   .transparencia {
-//     // margin-top: 110px;
-//     margin-bottom: 1rem;
-//     width: 100%;
-//     height: 100%;
-//     @include desktop {
-//       & {
-//         width: auto;
-//         height: 224px;
-//         background: $barn-red;
-//         border-radius: 2rem;
-//         opacity: 0.9;
-//         border: 1px solid $camel;
-//       }
-//     }
-//   }
-  // .fondoImg {
-  //   background: $barn-red;
-  //   opacity: 0.9;
-  //   box-shadow: 0px 0px 1px 1px $camel;
-  //   border-start-end-radius: 2rem;
-  //   border-bottom-right-radius: 2rem;
-  //   @include desktop {
-  //     margin: 0;
-  //     background: none;
-  //     opacity: 1;
-  //     box-shadow: 0px 0px 0px 0px $camel;
-  //   }
-  // }
-
