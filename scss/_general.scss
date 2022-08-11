@@ -18,3 +18,18 @@ body{
     animation: none !important;
    }
 }
+#error{
+  h1{
+    text-align: center;
+    margin-top: 10rem;
+    a{
+      color: $camel;
+    text-decoration: none;
+  }
+}
+h2{
+  text-align: center;
+  color: $cosmic-latte;
+  font-size: 1rem;
+}
+}

@@ -11,17 +11,6 @@
   }
   
 }
-@include desktop{
-
-.cajaNav{
-  background: linear-gradient(rgba(43,33,24,.6),rgba(43,33,24,0));
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  display: flex;
-  z-index: 15;
-  align-items: flex-start;
-}}
 .bloqueLogo{
   display: flex;
   align-items: center;
