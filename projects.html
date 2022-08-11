@@ -150,5 +150,13 @@
         $("#seeMore2").removeClass("d-none");
       });
     </script>
+    <script>
+      $("#navbarNavAltMarkup").on("show.bs.collapse", function () {
+        $("#1").addClass("desaparece");
+      });
+      $("#navbarNavAltMarkup").on("hidden.bs.collapse", function () {
+        $("#1").removeClass("desaparece");
+      });
+    </script>
   </body>
 </html>
